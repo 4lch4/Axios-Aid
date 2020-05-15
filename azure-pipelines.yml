@@ -20,5 +20,4 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'publish --access public'
-    customEndpoint: 'NPM - Alcha'
   displayName: 'Publish Module'
