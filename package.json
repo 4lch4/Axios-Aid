@@ -1,0 +1,35 @@
+{
+  "name": "@4lch4/axios-aid",
+  "displayName": "AxiosAid",
+  "version": "1.0.0",
+  "description": "A lightweight wrapper around Axios for type data and ease of use.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --pretty",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4lch4/AxiosAid.git"
+  },
+  "keywords": [
+    "Axios"
+  ],
+  "author": {
+    "email": "hello@4lch4.dev",
+    "name": "4lch4",
+    "url": "https://hasslefree.solutions"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/4lch4/AxiosAid/issues"
+  },
+  "homepage": "https://github.com/4lch4/AxiosAid#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "typescript": "^3.9.2"
+  }
+}
