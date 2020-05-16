@@ -20,4 +20,5 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'publish --access public'
+    customEndpoint: 'NPM - 4lch4'
   displayName: 'Publish Module'
