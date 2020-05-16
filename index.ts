@@ -50,7 +50,7 @@ class AxiosAid {
 
 export default AxiosAid
 
-interface RequestPayload {
+export interface RequestPayload {
   /**
    * The URL Parameters to be appended to the URL. Must be a POJO or
    * URLSearchParams object.
@@ -64,7 +64,7 @@ interface RequestPayload {
 /**
  * The available methods to be used/sent along with the request.
  */
-type RequestMethod =
+export type RequestMethod =
   | 'get' | 'GET'
   | 'delete' | 'DELETE'
   | 'head' | 'HEAD'
