@@ -1,10 +1,8 @@
 dependencies:
   axios: 0.19.2
-  http: 0.0.1-security
-  https: 1.0.0
 devDependencies:
   eslint: 7.0.0
-  typescript: 3.9.2
+  typescript: 3.9.3
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -468,14 +466,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
-  /http/0.0.1-security:
-    dev: false
-    resolution:
-      integrity: sha512-RnDvP10Ty9FxqOtPZuxtebw1j4L/WiqNMDtuc1YMH1XQm5TgDRaR1G9u8upL6KD1bXHSp9eSXo/ED+8Q7FAr+g==
-  /https/1.0.0:
-    dev: false
-    resolution:
-      integrity: sha1-PDfHrhqO65ZpBKKtHpdaGUt+06Q=
   /iconv-lite/0.4.24:
     dependencies:
       safer-buffer: 2.1.2
@@ -903,13 +893,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
-  /typescript/3.9.2:
+  /typescript/3.9.3:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-q2ktq4n/uLuNNShyayit+DTobV2ApPEo/6so68JaD5ojvc/6GClBipedB9zNWYxRSAlZXAe405Rlijzl6qDiSw==
+      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
   /uri-js/4.2.2:
     dependencies:
       punycode: 2.1.1
@@ -949,7 +939,5 @@ packages:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
 specifiers:
   axios: ^0.19.2
-  eslint: ^7.0.0
-  http: ^0.0.1-security
-  https: ^1.0.0
-  typescript: ^3.9.2
+  eslint: 7.0.0
+  typescript: 3.9.3
