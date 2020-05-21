@@ -1,4 +1,4 @@
-import axios, { AxiosInstance } from "axios";
+import axios, { AxiosBasicCredentials, AxiosInstance } from "axios";
 
 /**
  * The default/only class exported by this module.
@@ -17,11 +17,12 @@ class AxiosAid {
    * @param baseUrl The base URL for the API/website you wish to interact with.
    * @param headers An optional Object that can be passed as the headers of each request.
    */
-  constructor(baseUrl: string, headers?: Object) {
+  constructor(baseUrl: string, headers?: Object, auth?: AxiosBasicCredentials) {
     this.client = axios.create({
       baseURL: baseUrl,
       timeout: 60000,
-      headers: headers
+      headers: headers,
+      auth: auth
     })
   }
 
