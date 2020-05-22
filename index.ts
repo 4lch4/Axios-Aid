@@ -1,11 +1,12 @@
 import axios, { AxiosBasicCredentials, AxiosInstance } from "axios";
 
 /**
- * The default/only class exported by this module.
+ * The only class exported by this module which contains the sole helper
+ * function within the module.
  */
 export class AxiosAid {
   /** The instance of Axios used for executing requests. */
-  client: AxiosInstance;
+  private client: AxiosInstance;
 
   /**
    * The constructor of the AxiosAid class. Accepts one mandatory base URL param
@@ -16,6 +17,7 @@ export class AxiosAid {
    *
    * @param baseUrl The base URL for the API/website you wish to interact with.
    * @param headers An optional Object that can be passed as the headers of each request.
+   * @param auth The optional credentials to provide if the API requires basic auth.
    */
   constructor(baseUrl: string, headers?: Object, auth?: AxiosBasicCredentials) {
     this.client = axios.create({
