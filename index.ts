@@ -3,7 +3,7 @@ import axios, { AxiosBasicCredentials, AxiosInstance } from "axios";
 /**
  * The default/only class exported by this module.
  */
-class AxiosAid {
+export class AxiosAid {
   /** The instance of Axios used for executing requests. */
   client: AxiosInstance;
 
@@ -48,8 +48,6 @@ class AxiosAid {
     })
   }
 }
-
-export default AxiosAid
 
 export interface RequestPayload {
   /**
