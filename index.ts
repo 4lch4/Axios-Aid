@@ -56,10 +56,10 @@ export interface RequestPayload {
    * The URL Parameters to be appended to the URL. Must be a POJO or
    * URLSearchParams object.
    */
-  params: Object
+  params?: Object
 
   /** The data to be sent as the request body. */
-  data: Object
+  data?: Object
 }
 
 /**

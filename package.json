@@ -1,7 +1,7 @@
 {
   "name": "@4lch4/axios-aid",
   "displayName": "AxiosAid",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A lightweight wrapper around Axios for type data and ease of use.",
   "main": "dist/index.js",
   "scripts": {
