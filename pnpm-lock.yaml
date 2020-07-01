@@ -2,7 +2,7 @@ dependencies:
   axios: 0.19.2
 devDependencies:
   eslint: 7.0.0
-  typescript: 3.9.3
+  typescript: 3.9.6
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -893,13 +893,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
-  /typescript/3.9.3:
+  /typescript/3.9.6:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+      integrity: sha512-Pspx3oKAPJtjNwE92YS05HQoY7z2SFyOpHo9MqJor3BXAGNaPUs83CuVp9VISFkSjyRfiTpmKuAYGJB7S7hOxw==
   /uri-js/4.2.2:
     dependencies:
       punycode: 2.1.1
@@ -940,4 +940,4 @@ packages:
 specifiers:
   axios: ^0.19.2
   eslint: 7.0.0
-  typescript: 3.9.3
+  typescript: 3.9.6
