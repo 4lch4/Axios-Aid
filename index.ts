@@ -1,4 +1,4 @@
-import axios, { AxiosBasicCredentials, AxiosInstance } from "axios";
+import axios, { AxiosBasicCredentials, AxiosInstance } from 'axios'
 
 /**
  * The only class exported by this module which contains the sole helper
@@ -6,7 +6,7 @@ import axios, { AxiosBasicCredentials, AxiosInstance } from "axios";
  */
 export class AxiosAid {
   /** The instance of Axios used for executing requests. */
-  private client: AxiosInstance;
+  private client: AxiosInstance
 
   /** Contains the headers that are used with the Axios instance. */
   readonly headers?: Object
@@ -29,7 +29,7 @@ export class AxiosAid {
       headers: headers,
       auth: auth
     })
-    
+
     this.headers = headers
   }
 
@@ -45,7 +45,12 @@ export class AxiosAid {
    * @param payload The optional request body or URL params of the request.
    * @param headers The optional headers to send along with the request.
    */
-  async performRequest(method: RequestMethod, endpoint: string, payload?: RequestPayload, headers?: Object) {
+  async performRequest(
+    method: RequestMethod,
+    endpoint: string,
+    payload?: RequestPayload,
+    headers?: Object
+  ) {
     return this.client({
       method: method,
       url: endpoint,
@@ -71,12 +76,21 @@ export interface RequestPayload {
  * The available methods to be used/sent along with the request.
  */
 export type RequestMethod =
-  | 'get' | 'GET'
-  | 'delete' | 'DELETE'
-  | 'head' | 'HEAD'
-  | 'options' | 'OPTIONS'
-  | 'post' | 'POST'
-  | 'put' | 'PUT'
-  | 'patch' | 'PATCH'
-  | 'link' | 'LINK'
-  | 'unlink' | 'UNLINK'
+  | 'get'
+  | 'GET'
+  | 'delete'
+  | 'DELETE'
+  | 'head'
+  | 'HEAD'
+  | 'options'
+  | 'OPTIONS'
+  | 'post'
+  | 'POST'
+  | 'put'
+  | 'PUT'
+  | 'patch'
+  | 'PATCH'
+  | 'link'
+  | 'LINK'
+  | 'unlink'
+  | 'UNLINK'
