@@ -94,3 +94,5 @@ export type RequestMethod =
   | 'LINK'
   | 'unlink'
   | 'UNLINK'
+
+export default AxiosAid
