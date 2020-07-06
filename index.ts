@@ -8,6 +8,9 @@ export class AxiosAid {
   /** The instance of Axios used for executing requests. */
   private client: AxiosInstance;
 
+  /** Contains the headers that are used with the Axios instance. */
+  readonly headers?: Object
+
   /**
    * The constructor of the AxiosAid class. Accepts one mandatory base URL param
    * for whatever API/website you wish to interact with. Then when you use the
@@ -26,6 +29,8 @@ export class AxiosAid {
       headers: headers,
       auth: auth
     })
+    
+    this.headers = headers
   }
 
   /**
