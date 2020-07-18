@@ -96,3 +96,5 @@ export type RequestMethod =
   | 'UNLINK'
 
 export default AxiosAid
+
+export { AxiosBasicCredentials }
