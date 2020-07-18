@@ -97,9 +97,7 @@ type RequestMethod =
 
 export default AxiosAid
 
-interface Types {
-  BasicCredentials: AxiosBasicCredentials
-  RequestMethod: RequestMethod
-}
 
-export { Types }
+export { 
+  AxiosBasicCredentials
+}
