@@ -75,7 +75,7 @@ export interface RequestPayload {
 /**
  * The available methods to be used/sent along with the request.
  */
-export type RequestMethod =
+type RequestMethod =
   | 'get'
   | 'GET'
   | 'delete'
@@ -97,4 +97,9 @@ export type RequestMethod =
 
 export default AxiosAid
 
-export { AxiosBasicCredentials }
+interface Types {
+  BasicCredentials: AxiosBasicCredentials
+  RequestMethod: RequestMethod
+}
+
+export { Types }
