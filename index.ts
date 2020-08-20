@@ -9,7 +9,7 @@ export class AxiosAid {
   private client: AxiosInstance
 
   /** Contains the headers that are used with the Axios instance. */
-  readonly headers?: Object
+  readonly headers?: RequestHeaders
 
   /**
    * The constructor of the AxiosAid class. Accepts one mandatory base URL param
@@ -22,7 +22,11 @@ export class AxiosAid {
    * @param headers An optional Object that can be passed as the headers of each request.
    * @param auth The optional credentials to provide if the API requires basic auth.
    */
-  constructor(baseUrl: string, headers?: Object, auth?: AxiosBasicCredentials) {
+  constructor(
+    baseUrl: string,
+    headers?: RequestHeaders,
+    auth?: AxiosBasicCredentials
+  ) {
     this.client = axios.create({
       baseURL: baseUrl,
       timeout: 60000,
@@ -72,6 +76,10 @@ export interface RequestPayload {
   data?: Object
 }
 
+interface RequestHeaders {
+  [key: string]: string
+}
+
 /**
  * The available methods to be used/sent along with the request.
  */
@@ -97,7 +105,4 @@ type RequestMethod =
 
 export default AxiosAid
 
-
-export { 
-  AxiosBasicCredentials
-}
+export { AxiosBasicCredentials }
