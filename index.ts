@@ -54,7 +54,7 @@ export class AxiosAid {
     endpoint: string,
     payload?: RequestPayload,
     headers?: Object
-  ) {
+  ): Promise<any> {
     return this.client({
       method: method,
       url: endpoint,
