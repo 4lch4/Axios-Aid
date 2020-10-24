@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/4lch4/AxiosAid#readme",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.0"
   },
   "devDependencies": {
     "eslint": "7.4.0",
